@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav{
     display: flex;
     justify-content: center;
     position: fixed;
-    background-color: rgb(136, 190, 246);
+    background-color: rgb(35, 38, 92);
     width: 100%;
     top: 0;
     left: 0;
@@ -17,7 +18,7 @@
 }
 
 .nav ul{
-    display: flex;
+    display:flex;
     list-style: none;
     padding: 0;
     gap: 30px;
@@ -30,6 +31,51 @@
 
 .nav a{
     text-decoration: none;
-    font-size: 20;
-    color: rgb(68, 96, 144);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.container-header{
+    background-color: rgb(80, 106, 134);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-profile {
+    background-color: rgb(35, 38, 92);
+    border: none;
+    color: rgb(201, 213, 219);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darksalmon;
 }
